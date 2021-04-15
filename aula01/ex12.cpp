@@ -4,7 +4,8 @@ using namespace std;
 void digaAlo(string msg);
 
 int main() {
-    digaAlo("Alo mundo!!!");
+    digaAlo("Alo mundo!!!\n");
+    digaAlo("FATEC RP");
     return 0;
 }
 

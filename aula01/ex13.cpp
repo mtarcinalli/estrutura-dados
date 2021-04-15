@@ -16,11 +16,9 @@ int main() {
     cout << "Estamos em main()\n";
     int x, y, z;
     cout << "\nDigite o primeiro num. + <Enter>";
-    //x = 12;
     cin >> x;
     cout << "\nDigite o segundo num. + <Enter>";
     cin >> y; 
-    //y = 14;
     cout << "Chamando funcao Soma()...\n";
     z = Soma(x, y);
     cout << "Voltamos a main()\n";
