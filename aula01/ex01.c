@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     printf("Ola mundo 01!");
     return 0;
 }

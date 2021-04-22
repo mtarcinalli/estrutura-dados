@@ -1,19 +1,21 @@
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::cout << "*** Tamanhos das variaveis ***\n";
-    std::cout << "Tamanho de char =\t"
+    cout << "*** Tamanhos das variaveis ***\n";
+    cout << "Tamanho de char =\t"
         << sizeof(char)
         << " bytes.\n";
-    std::cout << "Tamanho de int =\t"
+    cout << "Tamanho de int =\t"
         << sizeof(int) 
         << " bytes.\n";
-    std::cout << "Tamanho de float =\t"
+    cout << "Tamanho de float =\t"
         << sizeof(float)
         << " bytes.\n";
-    std::cout << "Tamanho de double =\t"
+    cout << "Tamanho de double =\t"
         << sizeof(double)
         << " bytes.\n";
-    std::cout << "Tamanho de bool =\t"
+    cout << "Tamanho de bool =\t"
         << sizeof(bool)
         << " bytes.\n";
     return 0;

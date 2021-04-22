@@ -1,17 +1,13 @@
 #include <iostream>
+using namespace std;
+
 int main() {
     unsigned short int usVar;
     usVar = 65535;
-    std::cout << "Valor inicial = "
-        << usVar 
-        << "\n";
+    cout << "Valor inicial = " << usVar << "\n";
     usVar = usVar + 1;
-    std::cout << "Somando 1 = "
-        << usVar 
-        << "\n";
+    cout << "Somando 1 = " << usVar << "\n";
     usVar = usVar + 1;
-    std::cout << "Somando mais 1 = "
-        << usVar 
-        << "\n";
+    cout << "Somando mais 1 = " << usVar << "\n";
     return 0;
 }

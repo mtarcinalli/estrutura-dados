@@ -2,24 +2,28 @@
 using namespace std;
 
 int main() {
-    char charVar = 't';
+    char charVar;
+    
     int intVar = 298;
     float floatVar = 49.95;
     double doubleVar = 99.9999;
     bool boolVar = (2 > 3);
-    std::cout << "charVar = " 
+    
+    charVar = 't';
+    
+    cout << "charVar = " 
         << charVar 
         << "\n";
-    std::cout << "intVar = " 
+    cout << "intVar = " 
         << intVar 
         << "\n";
-    std::cout << "floatVar = " 
+    cout << "floatVar = " 
         << floatVar 
         << "\n";
-    std::cout << "doubleVar = " 
+    cout << "doubleVar = " 
         << doubleVar 
         << "\n";
-    std::cout << "boolVar = " 
+    cout << "boolVar = " 
         << boolVar 
         << "\n";
     return 0;

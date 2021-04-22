@@ -12,7 +12,6 @@ void func2(int &y) {
 }
 
 int main() {
-  string a;
   int y = 3;
   cout << "y em main: \t" << y << "\n";
   //getchar();

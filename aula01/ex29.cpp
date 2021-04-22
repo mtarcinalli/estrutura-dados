@@ -14,7 +14,6 @@ void func2(int *py) {
 }
 
 int main() {
-  string a;
   int y = 3;
   cout << "y em main: \t" << y << "\n";
   cout << "end y: \t" << &y << "\n\n";
@@ -32,4 +31,11 @@ int main() {
 
   cout << "y em main: \t" << y << "\n";
   cout << "end y: \t" << &y << "\n\n";
+
+  func2(y);
+  //getchar();
+
+  cout << "y em main: \t" << y << "\n";
+  cout << "end y: \t" << &y << "\n\n";
+
 }

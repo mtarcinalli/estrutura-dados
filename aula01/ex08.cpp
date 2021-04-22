@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    std::cout.setf(ios::fixed);    
+    cout.setf(ios::fixed);    
     cout << "Tipo\t\t\tTamanho\t\tValores\n";
     
     cout <<"short int: \t\t"
