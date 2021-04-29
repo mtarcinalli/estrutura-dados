@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Pilha.h"
+#include "Pilha.cpp"
 
 using namespace std;
 
@@ -62,5 +62,5 @@ int main() {
         cout << "Desempilhado: " << x << "\n";
     else
         cout << "Pilha vazia!\n";
-    
+    cin >> x;
 }
