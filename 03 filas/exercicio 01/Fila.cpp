@@ -96,6 +96,13 @@ string Fila::listar() {
 
 }
 
+bool Fila::estaNaFila(int x) {
+	// retornar verdadeiro caso o valor x seja localizado na fila
+	// seu código aqui:
+	
+	
+}
+
 Fila Fila::interseccao(Fila auxFila) {
 	// retornar objeto Fila contendo a intersecção com a lista atual
 	// elementos em comum com as 2 listas
