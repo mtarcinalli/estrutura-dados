@@ -45,15 +45,14 @@ bool Fila::remover(int &x) {
 string Fila::listar() {
 	// implementar listagem de elementos no formato
 	// - 8 - 7 - 6 -
-	// utilizar métodos inserir e remover
+	// utilizar mÃ©todos inserir e remover
 	//
-	// seu código aqui	
+	// seu cÃ³digo aqui	
 	int y;
 	Fila auxFila;
 	string retorno = " - ";
 	
-	while (this->remover(y)) {
-		//cout << y << "\n";
+	while (remover(y)) {
 		retorno = retorno + to_string(y) + " - ";
 		auxFila.inserir(y);
 	}
