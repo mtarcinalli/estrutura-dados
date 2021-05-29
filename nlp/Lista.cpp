@@ -1,4 +1,3 @@
-#include <string>
 #include "Lista.h"
 
 Lista::Lista() {
@@ -22,7 +21,7 @@ bool Lista::setaPosicao(int posicao, PonteiroElemento &atual) {
     return true;
 }
 
-bool Lista::inserir(int posicao, int auxIdHotel, int auxIdAnalise, string auxAnalise) {
+bool Lista::inserir(int posicao, int auxIdHotel, int auxIdAnalise, string auxAnalise, vector<string> &auxPalavras) {
     PonteiroElemento p, atual;
     
     if (posicao < 1 or posicao > contador + 1) {
@@ -34,6 +33,7 @@ bool Lista::inserir(int posicao, int auxIdHotel, int auxIdAnalise, string auxAna
     p->idAnalise = auxIdAnalise;
     p->idHotel = auxIdHotel;
     p->analise = auxAnalise;
+    p->palavras = auxPalavras;
     
     if (posicao == 1) {
         p->proximoElemento = inicio;
@@ -47,13 +47,13 @@ bool Lista::inserir(int posicao, int auxIdHotel, int auxIdAnalise, string auxAna
     return true;    
 }
 
-bool Lista::remover(int posicao, int &auxIdHotel, int &auxIdAnalise, string &auxAnalise) {
+
+
+bool Lista::remover(int posicao, int &auxIdHotel, int &auxIdAnalise, string &auxAnalise, vector<string> &auxPalavras) {
     PonteiroElemento p, atual;
-    
     if (posicao < 1 or posicao > contador) {
         return false;
-    }
-
+    }    
     if(posicao == 1) {
         p = inicio;
         inicio = inicio->proximoElemento;
@@ -66,6 +66,7 @@ bool Lista::remover(int posicao, int &auxIdHotel, int &auxIdAnalise, string &aux
     auxIdHotel = p->idHotel;
     auxIdAnalise = p->idAnalise;
     auxAnalise = p->analise;
+    auxPalavras = p->palavras;
 
     delete p;
     contador --;
@@ -76,3 +77,19 @@ bool Lista::remover(int posicao, int &auxIdHotel, int &auxIdAnalise, string &aux
 int Lista::tamanho() {
     return contador;
 }
+
+bool Lista::inserirPalavra(int posicao, string auxPalavra) {
+    PonteiroElemento atual;
+    setaPosicao(posicao, atual);
+    atual->palavras.push_back(auxPalavra);
+    return true;
+}
+
+void Lista::listarPalavras(int posicao) {
+    PonteiroElemento atual;
+    setaPosicao(posicao, atual);
+    for (int i=0 ; i < atual->palavras.size() ; i++) {
+        cout << atual->palavras[i] << " - ";
+    }
+}
+
