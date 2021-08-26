@@ -2,15 +2,14 @@
 using namespace std;
 
 int main() {
-    int larg = 7, compr;
-    compr = 8;
-    int area = larg * compr;
-    area = area + 1;
+    int largura = 7, comprimento;
+    comprimento = 8;
+    int area = largura * comprimento;
     cout << "*** Valores finais ***\n";
     cout << "Largura = "
-        << larg << "\n";
+        << largura << "\n";
     cout << "Comprimento = "
-        << compr << "\n";
+        << comprimento << "\n";
     cout << "Area = "
         << area << "\n";
     return 0;

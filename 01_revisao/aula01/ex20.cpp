@@ -3,11 +3,13 @@ using namespace std;
 
 int num(int b);
 int aGlobal = 4;
+#define MAX 4
 
 int main() {
     int a = 3;
     int b = 1;
     int c = 2;
+    cout << "Max:" << MAX;
     cout << "aGlobal: " << aGlobal << "\n";
     cout << "a main: " << a << "\n";
     cout << "b main: " << b << "\n";
@@ -28,6 +30,7 @@ int num(int b) {
     cout << "aGlobal na função: " << aGlobal << "\n";
     aGlobal++;
     b++;
+    cout << "b na função pós incremento: " << b << "\n";
     cout << "---fim função---\n\n";
     return b;
 }

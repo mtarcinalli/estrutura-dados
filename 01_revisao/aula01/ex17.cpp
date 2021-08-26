@@ -4,6 +4,7 @@ using namespace std;
 int main(int argc, char *argv[ ]) {
     int a;
     a = atoi(argv[1]);
+    cout << argv[0] << "\n";
     
     if (a > 10) {
         cout << "a: " << a << " maior que 10!\n";

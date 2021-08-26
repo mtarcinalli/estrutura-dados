@@ -2,6 +2,7 @@
 using namespace std;
 
 int Soma(int i, int j) {
+    int k;
     cout << "Estamos na funcao Soma().\n";
     cout << "Valores recebidos: \n";
     cout << "i = "
@@ -9,12 +10,13 @@ int Soma(int i, int j) {
         << ", j = "
         << j
         << "\n";
-    return (i + j);
+    k = i + j;
+    return (k);
 }
 
 int main() {
-    cout << "Estamos em main()\n";
     int x, y, z;
+    cout << "Estamos em main()\n";
     cout << "\nDigite o primeiro num. + <Enter>";
     cin >> x;
     cout << "\nDigite o segundo num. + <Enter>";

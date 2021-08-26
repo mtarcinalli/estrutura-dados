@@ -16,7 +16,10 @@ int main(int argc, char *argv[ ]) {
     if (! (a == 11) ) {
         cout << "a: " << a << " diferente de 11!\n";
     }
-    cout << "\n";
+
+    if (a != 11) {
+        cout << "a: " << a << " diferente de 11!\n";
+    }
     
     return 0;
 }

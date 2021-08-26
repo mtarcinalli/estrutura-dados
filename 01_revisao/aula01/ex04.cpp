@@ -3,7 +3,6 @@ using namespace std;
 
 int main() {
     char charVar;
-    
     int intVar = 298;
     float floatVar = 49.95;
     double doubleVar = 99.9999;
