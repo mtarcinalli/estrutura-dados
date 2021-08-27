@@ -19,9 +19,11 @@ int main() {
     int y = 3;
     cout << "y em main: \t" << y << "\n";
 
+    // passagem por valor: não altera y
     func1(y);
     cout << "y em main: \t" << y << "\n\n";
 
+    // passagem por referencia: altera y
     func2(y);
     cout << "y em main: \t" << y << "\n";
 

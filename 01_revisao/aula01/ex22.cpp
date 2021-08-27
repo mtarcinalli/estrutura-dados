@@ -7,8 +7,9 @@ int main() {
          contador++;
          if (contador > 20)
              break;
-         if (contador > 10)
+         if (contador > 10) {
              continue;
+         }
          cout << "Contador = " << contador << "\n";         
     }
     cout << "\n\nValor final = " << contador;    

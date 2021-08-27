@@ -9,7 +9,7 @@ int main() {
     int a = 3;
     int b = 1;
     int c = 2;
-    cout << "Max:" << MAX;
+    cout << "Max:" << MAX << "\n";
     cout << "aGlobal: " << aGlobal << "\n";
     cout << "a main: " << a << "\n";
     cout << "b main: " << b << "\n";

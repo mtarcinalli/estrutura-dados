@@ -7,6 +7,10 @@ void func1(int y) {
   cout << "endereço y: \t" << &y << "\n\n";
 }
 
+void func3(int *py) {
+    
+}
+
 void func2(int *py) {
   (*py)++;
   cout << "valor de py em func2:\t" << *py << "\n";
