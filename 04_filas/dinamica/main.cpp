@@ -6,7 +6,7 @@ using namespace std;
 #include "Fila.cpp"
 
 int main() {
-    Fila fila01, fila02;
+    Fila fila01, filaAux;
     Fila fila03;
     int y;
 
@@ -19,8 +19,20 @@ int main() {
 
     int contador = 0;
     while (fila01.remover(y)) {
-        cout << "Removido: " << y << endl;
         contador++;
+        filaAux.inserir(y);
     }
     cout << "A fila tinha " << contador << " elementos!";
+
+
+    while (filaAux.remover(y))
+        fila01.inserir(y);
+
+
+    while (fila01.remover(y)) {
+        cout << "Removido: " << y << endl;
+    }
+
+
+
 }
